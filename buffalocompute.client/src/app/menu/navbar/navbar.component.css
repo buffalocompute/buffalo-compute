@@ -1,0 +1,55 @@
+/* Buffalo Compute - Navbar
+--------------------------------------------- */
+
+#header {
+  position: relative;
+  z-index: 1000;
+  background-color: #002673;
+}
+
+#navbar {
+  height: auto;
+  width: 100%;
+  max-width: 60vw;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#navbar #menu {
+  align-self: center;
+}
+
+#logo {
+  height: auto;
+  width: auto;
+  padding: 30px;
+  margin: 0;
+}
+
+#menu {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin: 0 15px 0 0;
+}
+
+#announcement {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #3993dd;
+}
+
+#announcement span {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  color: #0d160b;
+}
