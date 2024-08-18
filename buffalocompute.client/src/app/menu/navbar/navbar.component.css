@@ -9,57 +9,123 @@
 #navbar {
   padding: 8px;
   margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
 }
 
 #navbar .logo {
   height: auto;
   width: auto;
   padding: 0;
+  margin: 0 auto 0 0;
 }
 
-#navbar .menu {
-  align-self: center;
-}
-
-#navbar .menu {
+#navbar .mobile-menu-icon {
+  appearance: none;
   height: auto;
   width: auto;
   padding: 0;
   margin: 0;
-  align-self: center;
+  background-color: transparent;
+  border: none;
 }
 
-#navbar .menu li {
-  margin: 0 16px 0 0;
+#navbar-mobile {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  background-color: #0d160b;
+}
+
+#navbar-mobile ul li a {
+  display: block;
+  color: #ffeddf;
+  padding: 8px;
+  background-color: transparent;
+}
+
+#navbar-mobile ul li a:hover,
+#navbar-mobile ul li a:active {
+  background-color: #002673;
+}
+
+#navbar .menu {
+  display: none;
+  visibility: hidden;
+}
+
+#navbar .menu ul li a {
+  display: block;
+  color: #0d160b;
+  padding: 8px;
+  border-bottom-width: thick;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+#navbar .menu ul li a:hover,
+#navbar .menu ul li a:active {
+  border-bottom-width: thick;
+  border-bottom-style: solid;
+  border-bottom-color: #002673;
 }
 
 #announcement {
   margin: 0;
-  background-color: #3993dd;
+  background-color: #002673;
 }
 
 #announcement span {
   padding: 16px;
   text-align: center;
   font-weight: 600;
+  color: #ffeddf;
 }
 
 /* Media Queries */
 
-@media screen and (min-width: 800px) {
-  #navbar {
+@media screen and (min-width: 768px) {
+  #navbar,
+  #navbar-mobile {
     padding: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #navbar {
+    max-width: 60vw;
   }
 
   #navbar .logo {
     margin: 0 16px 0 0;
     align-self: center;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  #navbar {
-    max-width: 60vw;
+  #navbar .mobile-menu-icon,
+  #navbar-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  #navbar .menu {
+    display: block;
+    align-self: center;
+    visibility: visible;
+  }
+
+  #navbar .menu {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+  }
+
+  #navbar .menu li {
+    margin: 0 16px 0 0;
   }
 }
 

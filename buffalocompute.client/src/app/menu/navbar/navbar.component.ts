@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css',
   standalone: true,
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  navbarMobileVisible = false;
+
+  toggleMobileMenu() {
+    this.navbarMobileVisible = !this.navbarMobileVisible;
+  }
+}

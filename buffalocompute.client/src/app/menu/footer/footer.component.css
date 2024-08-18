@@ -33,8 +33,6 @@
 #outro .text {
   height: auto;
   width: auto;
-  padding: 0;
-  margin: 0;
 }
 
 #outro .text p {
@@ -47,8 +45,6 @@
 #outro .menu {
   height: auto;
   width: auto;
-  padding: 0;
-  margin: 0;
 }
 
 #outro .menu ul {
@@ -79,7 +75,7 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   #footer {
     padding: 16px;
   }
@@ -113,7 +109,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   #footer {
     max-width: 90vw;
   }
