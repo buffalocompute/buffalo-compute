@@ -86,7 +86,8 @@
     </nav>
   </div>
 </header>
-<nav id="navbar-mobile" [hidden]="navbarMobileVisible">
+@if (navbarMobileVisible === true) {
+<nav id="navbar-mobile" aria-label="Buffalo Compute Navbar Mobile">
   <ul class="flex-column">
     <li class="flex-column-item">
       <a
@@ -94,7 +95,7 @@
         href="/"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Link"
+        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
         >Home</a
       >
@@ -105,7 +106,7 @@
         href="/"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Link"
+        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
         >About</a
       >
@@ -116,7 +117,7 @@
         href="/"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Link"
+        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
         >Articles</a
       >
@@ -127,7 +128,7 @@
         href="/"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Link"
+        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
         >Code</a
       >
@@ -138,13 +139,15 @@
         href="/"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Link"
+        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
         >Infrastructure</a
       >
     </li>
   </ul>
 </nav>
+}
+
 <div id="announcement" class="flex-row">
   <span class="flex-row-item">This is an announcement!</span>
 </div>
