@@ -155,7 +155,7 @@ hr {
   margin: 0;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 800px) {
   /* Flex & Spacing */
 
   .flex-row {
@@ -163,4 +163,10 @@ hr {
     flex-wrap: nowrap;
     flex-flow: row nowrap;
   }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }

@@ -4,53 +4,123 @@
 #footer {
   position: relative;
   z-index: 1000;
+  padding: 8px;
+  margin: 0 auto;
 }
 
-#footer {
-  padding: 15px;
-  margin: 0 auto;
+#footer hr {
+  margin: 8px 0;
 }
 
 #intro {
-  height: auto;
-  width: auto;
-  padding: 15px;
+  padding: 0;
   margin: 0 auto;
 }
 
+#intro .text p {
+  padding: 0;
+}
+
 #intro .logo {
-  height: auto;
-  width: auto;
-  margin: 0 15px 0 0;
   align-self: center;
 }
 
 #outro {
-  padding: 15px;
-  margin: 0;
+  padding: 0;
+  margin: 8px 0;
 }
 
-#outro .follow {
-  font-weight: 600;
-}
-
-#outro .follow ul {
-  margin: 0 auto;
-}
-
-#outro .follow ul li {
+#outro .text {
   height: auto;
   width: auto;
   padding: 0;
-  margin: 0 15px 0 0;
+  margin: 0;
+}
+
+#outro .text p {
+  padding: 0;
+  margin: 8px auto;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#outro .menu {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#outro .menu ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 8px auto;
+}
+
+#outro ul li {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+#outro .copyright span {
+  width: auto;
+  font-size: 12px;
+  margin: 8px auto;
   align-self: center;
 }
 
-#outro .follow ul li span {
-  font-size: 24px;
+#outro .copyright {
+  align-self: center;
 }
 
-#copyright {
-  text-align: right;
-  font-size: 12px;
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+  #footer {
+    padding: 16px;
+  }
+
+  #footer hr {
+    margin: 16px 0;
+  }
+
+  #intro .logo {
+    height: auto;
+    width: auto;
+    margin: 0 16px 0 0;
+  }
+
+  #outro .text {
+    align-self: center;
+    white-space: nowrap;
+    margin: 0 16px 0 0;
+  }
+
+  #outro .text p {
+    margin: 0;
+  }
+
+  #outro .follow ul li {
+    margin: 0 16px 0 0;
+  }
+
+  #outro .copyright {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #footer {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #footer {
+    max-width: 90vw;
+  }
 }

@@ -7,24 +7,21 @@
 }
 
 #navbar {
-  max-width: 60vw;
-  padding: 16px;
+  padding: 8px;
   margin: 0 auto;
 }
 
-#navbar #menu {
-  align-self: center;
-}
-
-#logo {
+#navbar .logo {
   height: auto;
   width: auto;
   padding: 0;
-  margin: 0 16px 0 0;
+}
+
+#navbar .menu {
   align-self: center;
 }
 
-#menu {
+#navbar .menu {
   height: auto;
   width: auto;
   padding: 0;
@@ -32,7 +29,7 @@
   align-self: center;
 }
 
-#menu li {
+#navbar .menu li {
   margin: 0 16px 0 0;
 }
 
@@ -45,4 +42,29 @@
   padding: 16px;
   text-align: center;
   font-weight: 600;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+  #navbar {
+    padding: 16px;
+  }
+
+  #navbar .logo {
+    margin: 0 16px 0 0;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #navbar {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #navbar {
+    max-width: 60vw;
+  }
 }
