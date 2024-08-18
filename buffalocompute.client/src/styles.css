@@ -35,9 +35,8 @@ body {
   -o-appearance: none;
   -khtml-appearance: none;
   appearance: none;
-  color: #fff;
-  background-color: #fff;
-  overflow-x: hidden;
+  color: #0d160b;
+  background-color: #ffeddf;
 }
 
 header,
@@ -86,6 +85,16 @@ button {
   font-optical-sizing: auto;
   font-weight: 100px;
   font-style: normal;
+}
+
+hr {
+  height: auto;
+  width: 100%;
+  max-width: 99vw;
+  padding: 0;
+  margin: 0 auto;
+  border-color: #0d160b;
+  opacity: 0.1;
 }
 
 /* Flex & Spacing */

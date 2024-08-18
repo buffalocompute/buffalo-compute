@@ -1,0 +1,56 @@
+/* Buffalo Compute - Footer
+--------------------------------------------- */
+
+#footer {
+  position: relative;
+  z-index: 1000;
+}
+
+#footer {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#intro {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#intro .logo {
+  height: auto;
+  width: auto;
+  margin: 0 15px 0 0;
+  align-self: center;
+}
+
+#outro {
+  padding: 15px;
+  margin: 0;
+}
+
+#outro .follow {
+  font-weight: 600;
+}
+
+#outro .follow ul {
+  margin: 0 auto;
+}
+
+#outro .follow ul li {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0 15px 0 0;
+  align-self: center;
+}
+
+#outro .follow ul li span {
+  font-size: 24px;
+}
+
+#copyright {
+  text-align: right;
+  font-size: 12px;
+}

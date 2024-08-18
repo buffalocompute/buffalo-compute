@@ -4,14 +4,11 @@
 #header {
   position: relative;
   z-index: 1000;
-  background-color: #002673;
 }
 
 #navbar {
-  height: auto;
-  width: 100%;
   max-width: 60vw;
-  padding: 0;
+  padding: 16px;
   margin: 0 auto;
 }
 
@@ -22,8 +19,9 @@
 #logo {
   height: auto;
   width: auto;
-  padding: 30px;
-  margin: 0;
+  padding: 0;
+  margin: 0 16px 0 0;
+  align-self: center;
 }
 
 #menu {
@@ -31,25 +29,20 @@
   width: auto;
   padding: 0;
   margin: 0;
+  align-self: center;
 }
 
 #menu li {
-  margin: 0 15px 0 0;
+  margin: 0 16px 0 0;
 }
 
 #announcement {
-  height: auto;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
+  margin: 0;
   background-color: #3993dd;
 }
 
 #announcement span {
-  padding: 15px;
-  margin: 0 auto;
+  padding: 16px;
   text-align: center;
-  font-size: 19px;
   font-weight: 600;
-  color: #0d160b;
 }

@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NavbarComponent } from './menu/navbar/navbar.component';
+import { FooterComponent } from './menu/footer/footer.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { NavbarComponent } from './menu/navbar/navbar.component';
     AppRoutingModule,
     SharedModule,
     NavbarComponent,
+    FooterComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
