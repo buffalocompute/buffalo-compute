@@ -16,11 +16,24 @@
 }
 
 #swiper swiper-slide .swiper-content {
+  overflow: hidden;
+  position: relative;
   height: auto;
   width: 100%;
   padding: 144px 44px;
   margin: 0 auto;
   color: #ffeddf;
+}
+
+#swiper swiper-slide .swiper-content img {
+  opacity: 0.3;
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 #swiper swiper-slide .swiper-title {
@@ -40,6 +53,10 @@
   font-size: 18px;
   font-weight: 600;
   --density: 3;
+  --accent-fill-rest: #002673;
+  --accent-stroke-control-rest: #002673;
+  --accent-fill-hover: #3993dd;
+  --accent-stroke-control-hover: #3993dd;
 }
 
 /* Media Queries */
