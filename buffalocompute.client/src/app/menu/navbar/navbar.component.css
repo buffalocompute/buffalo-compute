@@ -7,11 +7,11 @@
 }
 
 #navbar {
-  padding: 8px;
-  margin: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-flow: row nowrap;
+  padding: 9px;
+  margin: 0 auto;
 }
 
 #navbar .logo {
@@ -35,7 +35,7 @@
   position: relative;
   height: auto;
   width: 100%;
-  padding: 8px;
+  padding: 9px;
   margin: 0;
   background-color: #0d160b;
 }
@@ -43,7 +43,7 @@
 #navbar-mobile ul li a {
   display: block;
   color: #ffeddf;
-  padding: 8px;
+  padding: 9px;
   background-color: transparent;
 }
 
@@ -60,7 +60,7 @@
 #navbar .menu ul li a {
   display: block;
   color: #0d160b;
-  padding: 8px;
+  padding: 9px;
   border-bottom-width: thick;
   border-bottom-style: solid;
   border-bottom-color: transparent;
@@ -79,7 +79,7 @@
 }
 
 #announcement span {
-  padding: 16px;
+  padding: 9px;
   text-align: center;
   font-weight: 600;
   color: #ffeddf;
@@ -88,19 +88,11 @@
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  #navbar,
-  #navbar-mobile {
-    padding: 16px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  #navbar {
-    max-width: 60vw;
-  }
-
   #navbar .logo {
-    margin: 0 16px 0 0;
+    margin: 0 9px 0 0;
     align-self: center;
   }
 
@@ -125,12 +117,9 @@
   }
 
   #navbar .menu li {
-    margin: 0 16px 0 0;
+    margin: 0 9px 0 0;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  #navbar {
-    max-width: 60vw;
-  }
 }

@@ -4,12 +4,12 @@
 #footer {
   position: relative;
   z-index: 1000;
-  padding: 8px;
+  padding: 9px;
   margin: 0 auto;
 }
 
 #footer hr {
-  margin: 8px 0;
+  margin: 9px 0;
 }
 
 #intro {
@@ -27,7 +27,7 @@
 
 #outro {
   padding: 0;
-  margin: 8px 0;
+  margin: 9px 0;
 }
 
 #outro .text {
@@ -37,8 +37,8 @@
 
 #outro .text p {
   padding: 0;
-  margin: 8px auto;
-  font-size: 24px;
+  margin: 9px auto;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -54,18 +54,18 @@
   height: auto;
   width: auto;
   padding: 0;
-  margin: 8px auto;
+  margin: 9px auto;
 }
 
 #outro ul li {
   padding: 0;
-  margin: 0 8px 0 0;
+  margin: 0 9px 0 0;
 }
 
 #outro .copyright span {
   width: auto;
-  font-size: 12px;
-  margin: 8px auto;
+  font-size: 13px;
+  margin: 9px auto;
   align-self: center;
 }
 
@@ -76,24 +76,16 @@
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  #footer {
-    padding: 16px;
-  }
-
-  #footer hr {
-    margin: 16px 0;
-  }
-
   #intro .logo {
     height: auto;
     width: auto;
-    margin: 0 16px 0 0;
+    margin: 0 9px 0 0;
   }
 
   #outro .text {
     align-self: center;
     white-space: nowrap;
-    margin: 0 16px 0 0;
+    margin: 0 9px 0 0;
   }
 
   #outro .text p {
@@ -101,7 +93,7 @@
   }
 
   #outro .follow ul li {
-    margin: 0 16px 0 0;
+    margin: 0 9px 0 0;
   }
 
   #outro .copyright {
@@ -110,13 +102,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  #footer {
-    max-width: 90vw;
-  }
 }
 
 @media screen and (min-width: 1400px) {
-  #footer {
-    max-width: 90vw;
-  }
 }
