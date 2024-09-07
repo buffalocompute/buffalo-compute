@@ -76,6 +76,10 @@
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+  #footer {
+    margin: 0 18px;
+  }
+
   #intro .logo {
     height: auto;
     width: auto;
@@ -102,7 +106,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  #footer {
+    margin: 0 27px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  #footer {
+    margin: 0 9vw;
+  }
 }

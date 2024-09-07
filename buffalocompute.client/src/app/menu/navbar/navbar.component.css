@@ -79,7 +79,7 @@
 }
 
 #announcement span {
-  padding: 9px;
+  padding: 18px;
   text-align: center;
   font-weight: 600;
   color: #ffeddf;
@@ -88,9 +88,16 @@
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+  #navbar {
+    margin: 0 18px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  #navbar {
+    margin: 0 27px;
+  }
+
   #navbar .logo {
     margin: 0 9px 0 0;
     align-self: center;
@@ -122,4 +129,7 @@
 }
 
 @media screen and (min-width: 1400px) {
+  #navbar {
+    margin: 0 9vw;
+  }
 }

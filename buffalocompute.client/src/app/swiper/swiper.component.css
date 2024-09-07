@@ -3,7 +3,7 @@
 
 #swiper {
   padding: 0;
-  margin: 9px;
+  margin: 0 auto;
 }
 
 #swiper swiper-slide {
@@ -37,31 +37,24 @@
 }
 
 #swiper swiper-slide fluent-button {
+  font-size: 18px;
   font-weight: 600;
-}
-
-#swiper swiper-slide fluent-button button {
+  --density: 3;
 }
 
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  #swiper {
-    margin: 18px;
-  }
   #swiper swiper-slide .swiper-content {
     padding: 288px 88px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  #swiper {
-    margin: 27px;
-  }
 }
 
 @media screen and (min-width: 1400px) {
   #swiper {
-    margin: 36px;
+    margin: 0 6vw;
   }
 }
