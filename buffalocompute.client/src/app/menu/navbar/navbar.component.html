@@ -1,0 +1,153 @@
+<header id="header">
+  <div id="navbar" class="flex-row">
+    <a
+      class="logo flex-row-item"
+      href="/"
+      target="_self"
+      rel="noreferrer noopener"
+      aria-label="Buffalo Compute Link"
+      type="link"
+      ><img
+        src="/assets/BuffaloComputeAppAlt.png"
+        loading="eager"
+        height="30"
+        width="30"
+        alt="Buffalo Compute Logo"
+    /></a>
+    <button
+      class="mobile-menu-icon flex-row-item"
+      aria-label="Buffalo Compute Mobile Menu"
+      type="button"
+      (click)="toggleMobileMenu()"
+      clickable
+    >
+      <img
+        src="/assets/mobile-menu-icon.svg"
+        loading="eager"
+        height="30"
+        width="30"
+        alt="Buffalo Compute Mobile Menu Icon"
+      />
+    </button>
+
+    <nav class="menu flex-row-item">
+      <ul class="flex-row">
+        <li class="flex-row-item">
+          <a
+            href="/"
+            target="_self"
+            rel="noreferrer noopener"
+            aria-label="Buffalo Compute Link"
+            type="link"
+            >Home</a
+          >
+        </li>
+        <li class="flex-row-item">
+          <a
+            href="/"
+            target="_self"
+            rel="noreferrer noopener"
+            aria-label="Buffalo Compute Link"
+            type="link"
+            >About</a
+          >
+        </li>
+        <li class="flex-row-item">
+          <a
+            href="/"
+            target="_self"
+            rel="noreferrer noopener"
+            aria-label="Buffalo Compute Link"
+            type="link"
+            >Articles</a
+          >
+        </li>
+        <li class="flex-row-item">
+          <a
+            href="/"
+            target="_self"
+            rel="noreferrer noopener"
+            aria-label="Buffalo Compute Link"
+            type="link"
+            >Code</a
+          >
+        </li>
+        <li class="flex-row-item">
+          <a
+            href="/"
+            target="_self"
+            rel="noreferrer noopener"
+            aria-label="Buffalo Compute Link"
+            type="link"
+            >Infrastructure</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+@if (navbarMobileVisible === true) {
+<nav id="navbar-mobile" aria-label="Buffalo Compute Navbar Mobile">
+  <ul class="flex-column">
+    <li class="flex-column-item">
+      <a
+        class=""
+        href="/"
+        target="_self"
+        rel="noreferrer noopener"
+        aria-label="Buffalo Compute Navbar Mobile Link"
+        type="link"
+        >Home</a
+      >
+    </li>
+    <li class="flex-column-item">
+      <a
+        class=""
+        href="/"
+        target="_self"
+        rel="noreferrer noopener"
+        aria-label="Buffalo Compute Navbar Mobile Link"
+        type="link"
+        >About</a
+      >
+    </li>
+    <li class="flex-column-item">
+      <a
+        class=""
+        href="/"
+        target="_self"
+        rel="noreferrer noopener"
+        aria-label="Buffalo Compute Navbar Mobile Link"
+        type="link"
+        >Articles</a
+      >
+    </li>
+    <li class="flex-column-item">
+      <a
+        class=""
+        href="/"
+        target="_self"
+        rel="noreferrer noopener"
+        aria-label="Buffalo Compute Navbar Mobile Link"
+        type="link"
+        >Code</a
+      >
+    </li>
+    <li class="flex-column-item">
+      <a
+        class=""
+        href="/"
+        target="_self"
+        rel="noreferrer noopener"
+        aria-label="Buffalo Compute Navbar Mobile Link"
+        type="link"
+        >Infrastructure</a
+      >
+    </li>
+  </ul>
+</nav>
+}
+
+<div id="announcement" class="flex-row">
+  <span class="flex-row-item">This is an announcement!</span>
+</div>

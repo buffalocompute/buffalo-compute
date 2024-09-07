@@ -1,0 +1,67 @@
+/* Buffalo Compute - Swiper
+--------------------------------------------- */
+
+#swiper {
+  padding: 0;
+  margin: 9px;
+}
+
+#swiper swiper-slide {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #0d160b;
+  border: none;
+}
+
+#swiper swiper-slide .swiper-content {
+  height: auto;
+  width: 100%;
+  padding: 144px 44px;
+  margin: 0 auto;
+  color: #ffeddf;
+}
+
+#swiper swiper-slide .swiper-title {
+  color: #ffeddf;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#swiper swiper-slide p {
+  padding: 0;
+  margin: 18px auto;
+  color: #ffeddf;
+  font-size: 18px;
+}
+
+#swiper swiper-slide fluent-button {
+  font-weight: 600;
+}
+
+#swiper swiper-slide fluent-button button {
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  #swiper {
+    margin: 18px;
+  }
+  #swiper swiper-slide .swiper-content {
+    padding: 288px 88px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #swiper {
+    margin: 27px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #swiper {
+    margin: 36px;
+  }
+}
