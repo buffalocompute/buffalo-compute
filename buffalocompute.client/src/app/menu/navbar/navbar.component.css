@@ -4,12 +4,16 @@
 #header {
   position: relative;
   z-index: 1000;
+  height: auto;
+  width: 100%;
 }
 
 #navbar {
   flex-direction: row;
   flex-wrap: nowrap;
   flex-flow: row nowrap;
+  height: auto;
+  width: 100%;
   padding: 9px;
   margin: 0 auto;
 }
@@ -89,13 +93,13 @@
 
 @media screen and (min-width: 768px) {
   #navbar {
-    margin: 0 18px;
+    padding: 9px 18px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   #navbar {
-    margin: 0 27px;
+    padding: 9px 27px;
   }
 
   #navbar .logo {
@@ -130,6 +134,6 @@
 
 @media screen and (min-width: 1400px) {
   #navbar {
-    margin: 0 9vw;
+    padding: 9px 9vw;
   }
 }
