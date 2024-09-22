@@ -32,56 +32,17 @@
 
     <nav class="menu flex-row-item">
       <ul class="flex-row">
+        @for (link of links; track $index) {
         <li class="flex-row-item">
           <a
-            href="/"
+            [href]="link.href"
             target="_self"
             rel="noreferrer noopener"
-            aria-label="Buffalo Compute Link"
             type="link"
-            >Home</a
+            >{{ link.text }}</a
           >
         </li>
-        <li class="flex-row-item">
-          <a
-            href="/"
-            target="_self"
-            rel="noreferrer noopener"
-            aria-label="Buffalo Compute Link"
-            type="link"
-            >About</a
-          >
-        </li>
-        <li class="flex-row-item">
-          <a
-            href="/"
-            target="_self"
-            rel="noreferrer noopener"
-            aria-label="Buffalo Compute Link"
-            type="link"
-            >Articles</a
-          >
-        </li>
-        <li class="flex-row-item">
-          <a
-            href="/"
-            target="_self"
-            rel="noreferrer noopener"
-            aria-label="Buffalo Compute Link"
-            type="link"
-            >Code</a
-          >
-        </li>
-        <li class="flex-row-item">
-          <a
-            href="/"
-            target="_self"
-            rel="noreferrer noopener"
-            aria-label="Buffalo Compute Link"
-            type="link"
-            >Infrastructure</a
-          >
-        </li>
+        }
       </ul>
     </nav>
   </div>
@@ -89,61 +50,17 @@
 @if (navbarMobileVisible === true) {
 <nav id="navbar-mobile" aria-label="Buffalo Compute Navbar Mobile">
   <ul class="flex-column">
-    <li class="flex-column-item">
+    @for (link of links; track $index) {
+    <li class="flex-row-item">
       <a
-        class=""
-        href="/"
+        [href]="link.href"
         target="_self"
         rel="noreferrer noopener"
-        aria-label="Buffalo Compute Navbar Mobile Link"
         type="link"
-        >Home</a
+        >{{ link.text }}</a
       >
     </li>
-    <li class="flex-column-item">
-      <a
-        class=""
-        href="/"
-        target="_self"
-        rel="noreferrer noopener"
-        aria-label="Buffalo Compute Navbar Mobile Link"
-        type="link"
-        >About</a
-      >
-    </li>
-    <li class="flex-column-item">
-      <a
-        class=""
-        href="/"
-        target="_self"
-        rel="noreferrer noopener"
-        aria-label="Buffalo Compute Navbar Mobile Link"
-        type="link"
-        >Articles</a
-      >
-    </li>
-    <li class="flex-column-item">
-      <a
-        class=""
-        href="/"
-        target="_self"
-        rel="noreferrer noopener"
-        aria-label="Buffalo Compute Navbar Mobile Link"
-        type="link"
-        >Code</a
-      >
-    </li>
-    <li class="flex-column-item">
-      <a
-        class=""
-        href="/"
-        target="_self"
-        rel="noreferrer noopener"
-        aria-label="Buffalo Compute Navbar Mobile Link"
-        type="link"
-        >Infrastructure</a
-      >
-    </li>
+    }
   </ul>
 </nav>
 }

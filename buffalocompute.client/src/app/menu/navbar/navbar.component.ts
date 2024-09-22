@@ -12,4 +12,12 @@ export class NavbarComponent {
   toggleMobileMenu() {
     this.navbarMobileVisible = !this.navbarMobileVisible;
   }
+
+  links = [
+    { text: 'Home', href: '/' },
+    { text: 'About', href: '/about' },
+    { text: 'Articles', href: '/articles' },
+    { text: 'Blueprints', href: '/blueprints' },
+    { text: 'Tools', href: '/tools' },
+  ];
 }

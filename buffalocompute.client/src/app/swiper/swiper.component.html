@@ -1,38 +1,18 @@
 <div id="swiper">
   <swiper-container>
+    @for (slide of slides; track $index) {
     <swiper-slide class="flex-row">
       <div class="swiper-content flex-row-item">
-        <img
-          class=""
-          src="/assets/BuffaloComputeSwiperOne.png"
-          alt="Buffalo Compute Swiper One"
-        />
-        <span class="swiper-title">Buffalo Compute</span>
+        <img class="" [src]="slide.imageSource" [alt]="slide.imageAlt" />
+        <span class="swiper-title">{{ slide.title }}</span>
         <p>
-          Buffalo Compute is a cloud computing platform that provides a suite of
-          services for developers and businesses.
+          {{ slide.paragraph }}
         </p>
-        <fluent-button appearance="accent" class="btn"
-          >Learn more</fluent-button
-        >
+        <fluent-button appearance="accent" class="btn">{{
+          slide.buttonText
+        }}</fluent-button>
       </div>
     </swiper-slide>
-    <swiper-slide class="flex-row">
-      <div class="swiper-content flex-row-item">
-        <img
-          class=""
-          src="/assets/BuffaloComputeSwiperOne.png"
-          alt="Buffalo Compute Swiper Two"
-        />
-        <span class="swiper-title">Buffalo Compute</span>
-        <p>
-          Buffalo Compute is a cloud computing platform that provides a suite of
-          services for developers and businesses.
-        </p>
-        <fluent-button appearance="accent" class="btn"
-          >Learn more</fluent-button
-        >
-      </div>
-    </swiper-slide>
+    }
   </swiper-container>
 </div>

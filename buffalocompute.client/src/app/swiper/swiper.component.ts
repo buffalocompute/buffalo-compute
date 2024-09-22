@@ -9,4 +9,23 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './swiper.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class SwiperComponent {}
+export class SwiperComponent {
+  slides = [
+    {
+      imageSource: '/assets/BuffaloComputeSwiperOne.png',
+      imageAlt: 'Buffalo Compute Swiper',
+      title: 'Buffalo Compute',
+      paragraph:
+        'Buffalo Compute is a cloud computing platform that provides a suite of services for developers and businesses.',
+      buttonText: 'Learn more',
+    },
+    {
+      imageSource: '/assets/BuffaloComputeSwiperOne.png',
+      imageAlt: 'Buffalo Compute Swiper',
+      title: 'Buffalo Compute',
+      paragraph:
+        'Buffalo Compute is a cloud computing platform that provides a suite of services for developers and businesses.',
+      buttonText: 'Learn more',
+    },
+  ];
+}
